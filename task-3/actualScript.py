@@ -9,7 +9,7 @@ def compute(n):
         # formula for sum of n natural number = (n**n + n) / 2
         lim = n - 20  
         out = lim * lim
-        out = out - lim # bug: substracting lim from out | fix: out = out + lim
+        out = out - lim # bug: subtracting lim from out | fix: out = out + lim
         out = out / 2 
     print(out)
 

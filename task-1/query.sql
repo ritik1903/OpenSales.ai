@@ -10,7 +10,7 @@ CREATE TABLE department_table (     -- create department table as shown
 );
 
 
- LOAD DATA INFILE 'C:\\ProgramData\\MySQL\\MySQL Server 8.0\\Uploads\\departments.csv'      -- location got from secure_file_priv varriable 
+ LOAD DATA INFILE 'C:\\ProgramData\\MySQL\\MySQL Server 8.0\\Uploads\\departments.csv'      -- location got from secure_file_priv variable 
 INTO TABLE department_table
 FIELDS TERMINATED BY ','
 LINES TERMINATED BY '\n'
@@ -23,7 +23,7 @@ CREATE TABLE employee_table (   -- creating  employee table
 );
 
 
-LOAD DATA INFILE 'C:\\ProgramData\\MySQL\\MySQL Server 8.0\\Uploads\\employees.csv' -- location got from secure_file_priv varriable 
+LOAD DATA INFILE 'C:\\ProgramData\\MySQL\\MySQL Server 8.0\\Uploads\\employees.csv' -- location got from secure_file_priv variable 
 INTO TABLE employee_table
 FIELDS TERMINATED BY ','
 LINES TERMINATED BY '\n'
@@ -49,7 +49,7 @@ FROM department_table dt
 INNER JOIN employee_table et ON dt.ID = et.dept id
 INNER JOIN salaries_table s ON et.id = s.emp_id
 GROUP BY dt.name
-LIMIT 3;     -- this query will fetch top there departments with average monthly salary perserving the order in department table
+LIMIT 3;     -- this query will fetch top there departments with average monthly salary preserving the order in department table
 
 
 -----------Assumptions-----------------
