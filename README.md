@@ -3,7 +3,7 @@
 </p>
 
 ## ⭐ Introduction
- - The assignments are given in he format of files checkout the links below-
+ <h3>The assignments are given in he format of files checkout the links below</h3>
 
 <br/>
 <br/>
